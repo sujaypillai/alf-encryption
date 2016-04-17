@@ -1,0 +1,8 @@
+bin
+build
+.classpath
+.project
+.settings
+alf-encryption/repo-encrypter/alf_data_dev
+alf-encryption/repo-encrypter/target
+alf-encryption/share-encrypter/target

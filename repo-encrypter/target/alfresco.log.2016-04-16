@@ -1,0 +1,202 @@
+03:29:52,835 INFO  [org.alfresco.repo.admin] Using database URL 'jdbc:h2:/Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/alf_data_dev/h2_data/alf_dev;AUTO_SERVER=TRUE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=10000;MVCC=FALSE;LOCK_MODE=0' with user 'alfresco'.
+03:29:53,240 INFO  [org.alfresco.repo.admin] Connected to database H2 version 1.4.185 (2015-01-16)
+03:29:58,292 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'sysAdmin' subsystem, ID: [sysAdmin, default]
+03:29:58,316 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'sysAdmin' subsystem, ID: [sysAdmin, default] complete
+03:29:58,326 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Ignoring script patch (post-Hibernate): patch.db-V4.2-metadata-query-indexes
+03:30:04,482 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] Registered template processor Repository Template Processor for extension ftl
+03:30:04,486 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] Registered script processor Repository Script Processor for extension js
+03:30:07,993 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'ContentStore' subsystem, ID: [ContentStore, managed, unencrypted]
+03:30:08,049 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'ContentStore' subsystem, ID: [ContentStore, managed, unencrypted] complete
+03:30:08,064 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Connecting to database: jdbc:h2:/Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/alf_data_dev/h2_data/alf_dev, UserName=ALFRESCO, H2 JDBC Driver
+03:30:08,064 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Schema managed by database dialect org.hibernate.dialect.H2Dialect.
+03:30:08,157 WARN  [org.alfresco.repo.domain.schema.SchemaBootstrap] Schema validation found 83 potential problems, results written to: /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/Alfresco-H2Dialect-Validation-Pre-Upgrade-alf_-286095157690392206.txt
+03:30:08,165 WARN  [org.alfresco.repo.domain.schema.SchemaBootstrap] Schema validation found 28 potential problems, results written to: /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/Alfresco-H2Dialect-Validation-Pre-Upgrade-jbpm_-8021624422042921921.txt
+03:30:08,174 WARN  [org.alfresco.repo.domain.schema.SchemaBootstrap] Schema validation found 25 potential problems, results written to: /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/Alfresco-H2Dialect-Validation-Pre-Upgrade-act_-1837047724620106194.txt
+03:30:08,241 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Normalized schema dumped to file /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/Alfresco-schema-H2Dialect-pre-upgrade-alf_-7726909111345322701.xml.
+03:30:08,241 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Normalized schema dumped to file /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/Alfresco-schema-H2Dialect-pre-upgrade-jbpm_-4117874392601117563.xml.
+03:30:08,241 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Normalized schema dumped to file /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/Alfresco-schema-H2Dialect-pre-upgrade-act_-4897945550931634219.xml.
+03:30:08,244 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Executing database script /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/AlfrescoSchema-H2Dialect-Update-158849079363242137.sql (Copied from classpath:alfresco/dbscripts/create/org.hibernate.dialect.H2Dialect/AlfrescoCreate-RepoTables.sql).
+03:30:08,349 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Executing database script /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/AlfrescoSchema-H2Dialect-Update-2605012005979130076.sql (Copied from classpath:alfresco/dbscripts/create/org.hibernate.dialect.H2Dialect/AlfrescoCreate-LockTables.sql).
+03:30:08,356 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Executing database script /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/AlfrescoSchema-H2Dialect-Update-5582364310933882658.sql (Copied from classpath:alfresco/dbscripts/create/org.hibernate.dialect.H2Dialect/AlfrescoCreate-ContentTables.sql).
+03:30:08,368 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Executing database script /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/AlfrescoSchema-H2Dialect-Update-1709966613531485023.sql (Copied from classpath:alfresco/dbscripts/create/org.hibernate.dialect.H2Dialect/AlfrescoCreate-PropertyValueTables.sql).
+03:30:08,387 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Executing database script /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/AlfrescoSchema-H2Dialect-Update-6918599165404674079.sql (Copied from classpath:alfresco/dbscripts/create/org.hibernate.dialect.H2Dialect/AlfrescoCreate-ContentUrlEncryptionTables.sql).
+03:30:08,397 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Executing database script /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/AlfrescoSchema-H2Dialect-Update-3194920073598529106.sql (Copied from classpath:alfresco/dbscripts/create/org.hibernate.dialect.H2Dialect/AlfrescoCreate-AuditTables.sql).
+03:30:08,411 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Executing database script /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/AlfrescoSchema-H2Dialect-Update-215974928396253608.sql (Copied from classpath:alfresco/dbscripts/create/org.hibernate.dialect.H2Dialect/AlfrescoCreate-ActivityTables.sql).
+03:30:08,418 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Executing database script /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/AlfrescoSchema-H2Dialect-Update-7146654103437213407.sql (Copied from classpath:alfresco/dbscripts/create/org.hibernate.dialect.H2Dialect/AlfrescoCreate-UsageTables.sql).
+03:30:08,423 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Executing database script /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/AlfrescoSchema-H2Dialect-Update-1922987196591315560.sql (Copied from classpath:alfresco/dbscripts/create/org.hibernate.dialect.H2Dialect/AlfrescoCreate-SubscriptionTables.sql).
+03:30:08,426 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Executing database script /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/AlfrescoSchema-H2Dialect-Update-9016874385047551594.sql (Copied from classpath:alfresco/dbscripts/create/org.hibernate.dialect.H2Dialect/AlfrescoCreate-TenantTables.sql).
+03:30:08,463 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Executing database script /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/AlfrescoSchema-H2Dialect-Update-67559926639270050.sql (Generated).
+03:30:08,559 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Executing database script /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/AlfrescoSchema-H2Dialect-Update-5306696180291777725.sql (Copied from classpath:alfresco/dbscripts/create/org.hibernate.dialect.H2Dialect/AlfrescoPostCreate-JBPM-Extra.sql).
+03:30:08,560 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Executing database script /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/AlfrescoSchema-H2Dialect-Update-7494237958907287647.sql (Copied from classpath:alfresco/dbscripts/create/org.hibernate.dialect.H2Dialect/AlfrescoPostCreate-JBPM-FK-indexes.sql).
+03:30:08,576 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Executing database script /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/AlfrescoSchema-H2Dialect-Update-5214527493229031817.sql (Copied from classpath:alfresco/dbscripts/create/org.hibernate.dialect.H2Dialect/AlfrescoPostCreate-JBPM-varinst-indexes.sql).
+03:30:08,577 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Create scripts executed in 468 ms
+03:30:08,869 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] All executed statements:  /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/AlfrescoSchema-H2Dialect-All_Statements-4825821221364477667.sql.
+03:30:09,161 WARN  [org.alfresco.repo.domain.schema.SchemaBootstrap] Schema validation found 737 potential problems, results written to: /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/Alfresco-H2Dialect-Validation-Post-Upgrade-alf_-8482882870176362938.txt
+03:30:09,288 WARN  [org.alfresco.repo.domain.schema.SchemaBootstrap] Schema validation found 760 potential problems, results written to: /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/Alfresco-H2Dialect-Validation-Post-Upgrade-jbpm_-5566123853093879583.txt
+03:30:09,379 WARN  [org.alfresco.repo.domain.schema.SchemaBootstrap] Schema validation found 259 potential problems, results written to: /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/Alfresco-H2Dialect-Validation-Post-Upgrade-act_-8105229222001366665.txt
+03:30:09,685 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Normalized schema dumped to file /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/Alfresco-schema-H2Dialect-post-upgrade-alf_-7839099053423862617.xml.
+03:30:09,685 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Normalized schema dumped to file /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/Alfresco-schema-H2Dialect-post-upgrade-jbpm_-5049422149616825605.xml.
+03:30:09,685 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Normalized schema dumped to file /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/Alfresco-schema-H2Dialect-post-upgrade-act_-6688339535818037181.xml.
+03:30:10,009 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Search' subsystem, ID: [Search, hidden]
+03:30:10,364 ERROR [org.alfresco.repo.search.impl.lucene.fts.FullTextSearchIndexerBootstrapBean] The lucene search subsystem is not supported. Please see http://docs.alfresco.com/5.0/tasks/lucene-solr4-migration.html
+03:30:10,366 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Search' subsystem, ID: [Search, hidden] complete
+03:30:10,834 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Transformers' subsystem, ID: [Transformers, default]
+03:30:10,965 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Transformers' subsystem, ID: [Transformers, default] complete
+03:30:10,968 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'thirdparty' subsystem, ID: [thirdparty, default]
+03:30:11,016 ERROR [org.alfresco.repo.content.transform.RuntimeExecutableContentTransformerWorker] Failed to start a runtime executable content transformer: 
+Execution result: 
+   os:         Mac OS X
+   command:    ./bin/pdf2swf -V
+   succeeded:  false
+   exit code:  1
+   out:        
+   err:        Cannot run program "./bin/pdf2swf": error=2, No such file or directory
+03:30:11,038 ERROR [org.alfresco.repo.content.transform.magick.AbstractImageMagickContentTransformerWorker] ImageMagickContentTransformerWorker not available: 03160000 Failed to perform ImageMagick transformation: 
+Execution result: 
+   os:         Mac OS X
+   command:    ./ImageMagick/bin/convert /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/ImageMagickContentTransformerWorker_init_source_5389927151002785418.gif /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/target/Alfresco/ImageMagickContentTransformerWorker_init_target_5545612959130275116.png
+   succeeded:  false
+   exit code:  1
+   out:        
+   err:        Cannot run program "./ImageMagick/bin/convert": error=2, No such file or directory
+03:30:11,038 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'thirdparty' subsystem, ID: [thirdparty, default] complete
+03:30:11,044 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'OOoDirect' subsystem, ID: [OOoDirect, default]
+03:30:11,240 ERROR [org.alfresco.util.exec.RuntimeExecBootstrapBean] Bootstrap command failed: 
+Execution result: 
+   os:         Mac OS X
+   command:    soffice -accept=socket,host=127.0.0.1,port=8100;urp;StarOffice.ServiceManager -env:UserInstallation=file:///Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/alf_data_dev/oouser -headless -nocrashreport -nofirststartwizard -nologo -norestore
+   succeeded:  false
+   exit code:  2
+   out:        
+   err:        Cannot run program "soffice": error=2, No such file or directory
+03:30:11,270 WARN  [org.alfresco.util.OpenOfficeConnectionTester] An initial OpenOffice connection could not be established.
+03:30:11,272 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'OOoDirect' subsystem, ID: [OOoDirect, default] complete
+03:30:15,637 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Authentication' subsystem, ID: [Authentication, managed, alfrescoNtlm1]
+03:30:15,816 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Authentication' subsystem, ID: [Authentication, managed, alfrescoNtlm1] complete
+03:30:15,990 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+03:30:16,005 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+03:30:16,045 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+03:30:16,045 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+03:30:16,131 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+03:30:16,132 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+03:30:16,159 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+03:30:16,160 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+03:30:16,186 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+03:30:16,186 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+03:30:16,209 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+03:30:16,210 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+03:30:16,245 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+03:30:16,248 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+03:30:16,279 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+03:30:16,279 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+03:30:16,322 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+03:30:16,323 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+03:30:16,349 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+03:30:16,349 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+03:30:16,393 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+03:30:16,394 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+03:30:16,416 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+03:30:16,416 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+03:30:18,422 WARN  [org.activiti.engine.impl.bpmn.parser.BpmnParse] Following warnings encountered during process validation: [Validation set: 'activiti-executable-process' | Problem: 'activiti-exclusive-gateway-seq-flow-without-conditions'] : Exclusive gateway has at least one outgoing sequence flow without a condition (which isn't the default one) - [Extra info : processDefinitionId = activitiReview | processDefinitionName = Review And Approve Activiti Process |  | id = reviewDecision |  | activityName = Review Decision | ] ( line: 48, column: 9)
+
+03:30:18,524 WARN  [org.activiti.engine.impl.bpmn.parser.BpmnParse] Following warnings encountered during process validation: [Validation set: 'activiti-executable-process' | Problem: 'activiti-exclusive-gateway-seq-flow-without-conditions'] : Exclusive gateway has at least one outgoing sequence flow without a condition (which isn't the default one) - [Extra info : processDefinitionId = activitiReviewPooled | processDefinitionName = Pooled Review And Approve Activiti Process |  | id = reviewDecision |  | activityName = Review Decision | ] ( line: 49, column: 9)
+
+03:30:18,606 WARN  [org.activiti.engine.impl.bpmn.parser.BpmnParse] Following warnings encountered during process validation: [Validation set: 'activiti-executable-process' | Problem: 'activiti-exclusive-gateway-seq-flow-without-conditions'] : Exclusive gateway has at least one outgoing sequence flow without a condition (which isn't the default one) - [Extra info : processDefinitionId = activitiParallelReview | processDefinitionName = Parallel Review And Approve Activiti Process |  | id = reviewDecision |  | activityName = Review Decision | ] ( line: 86, column: 9)
+
+03:30:18,681 WARN  [org.activiti.engine.impl.bpmn.parser.BpmnParse] Following warnings encountered during process validation: [Validation set: 'activiti-executable-process' | Problem: 'activiti-exclusive-gateway-seq-flow-without-conditions'] : Exclusive gateway has at least one outgoing sequence flow without a condition (which isn't the default one) - [Extra info : processDefinitionId = activitiParallelGroupReview | processDefinitionName = Parallel Group Review And Approve Activiti Process |  | id = reviewDecision |  | activityName = Review Decision | ] ( line: 108, column: 9)
+
+03:30:18,747 WARN  [org.activiti.engine.impl.bpmn.parser.BpmnParse] Following warnings encountered during process validation: [Validation set: 'activiti-executable-process' | Problem: 'activiti-exclusive-gateway-seq-flow-without-conditions'] : Exclusive gateway has at least one outgoing sequence flow without a condition (which isn't the default one) - [Extra info : processDefinitionId = activitiInvitationModerated | processDefinitionName = Moderated activiti invitation process |  | id = reviewDecision |  | activityName = Review Decision | ] ( line: 46, column: 7)
+
+03:30:18,769 WARN  [org.activiti.engine.impl.bpmn.parser.BpmnParse] Following warnings encountered during process validation: [Validation set: 'activiti-executable-process' | Problem: 'activiti-exclusive-gateway-seq-flow-without-conditions'] : Exclusive gateway has at least one outgoing sequence flow without a condition (which isn't the default one) - [Extra info : processDefinitionId = activitiInvitationNominated | processDefinitionName = Nominated activiti invitation process |  | id = inviteGateway |  | activityName = Invite Gateway | ] ( line: 48, column: 7)
+
+03:30:18,854 INFO  [org.alfresco.repo.admin.ConfigurationChecker] The Alfresco root data directory ('dir.root') is: /Users/sujay/Dev/gitrepos/alf-encryption/repo-encrypter/alf_data_dev
+03:30:18,932 INFO  [org.alfresco.repo.admin.patch.PatchExecuter] Checking for patches to apply ...
+03:30:18,985 WARN  [org.alfresco.repo.admin.patch.PatchExecuter] Patch description is not available: Patch[ id=patch.contentFormFolderType, description=patch.contentFormFolderType.description, fixesFromSchema=0, fixesToSchema=36, targetSchema=37, ignored=false]
+03:30:18,997 WARN  [org.alfresco.repo.admin.patch.PatchExecuter] Patch description is not available: Patch[ id=patch.redeploySubmitProcess, description=patch.redeploySubmitProcess.description, fixesFromSchema=0, fixesToSchema=57, targetSchema=58, ignored=false]
+03:30:19,149 INFO  [org.alfresco.repo.admin.patch.PatchExecuter] 	Applying patch 'patch.siteLoadPatch.swsdp' (Loads a sample site into the repository.).
+03:30:22,028 INFO  [org.alfresco.repo.admin.patch.PatchExecuter] 	Applying patch 'patch.exampleJavaScript' (Loads sample Javascript file into datadictionary scripts folder).
+03:30:22,082 INFO  [org.alfresco.repo.admin.patch.PatchExecuter] 
+=== Applied patch                 === 
+ID: patch.db-V3.4-UsageTables
+RESULT: 
+Script completed
+=====================================
+03:30:22,082 INFO  [org.alfresco.repo.admin.patch.PatchExecuter] 
+=== Applied patch                 === 
+ID: patch.db-V4.0-TenantTables
+RESULT: 
+Script completed
+=====================================
+03:30:22,082 INFO  [org.alfresco.repo.admin.patch.PatchExecuter] 
+=== Applied patch                 === 
+ID: patch.db-V3.4-JBPM-varinst-indexes
+RESULT: 
+Script completed
+=====================================
+03:30:22,082 INFO  [org.alfresco.repo.admin.patch.PatchExecuter] 
+=== Applied patch                 === 
+ID: patch.db-V5.0-ContentUrlEncryptionTables
+RESULT: 
+Script completed
+=====================================
+03:30:22,082 INFO  [org.alfresco.repo.admin.patch.PatchExecuter] 
+=== Applied patch                 === 
+ID: patch.siteLoadPatch.swsdp
+RESULT: 
+Site swsdp imported.
+=====================================
+03:30:22,083 INFO  [org.alfresco.repo.admin.patch.PatchExecuter] 
+=== Applied patch                 === 
+ID: patch.exampleJavaScript
+RESULT: 
+Imported view into bootstrap location: /app:company_home/app:dictionary/app:scripts (workspace://SpacesStore/60438518-cbb8-48aa-aa1e-8cdac002b78d)
+=====================================
+03:30:22,098 INFO  [org.alfresco.repo.module.ModuleServiceImpl] Found 1 module(s).
+03:30:22,112 INFO  [org.alfresco.repo.module.ModuleServiceImpl] Installing module 'repo-encrypter' version 1.0.1604160329.
+03:30:22,116 DEBUG [com.ootb.demoamp.DemoComponent] Test debug logging. Congratulation your AMP is working
+03:30:22,116 INFO  [com.ootb.demoamp.DemoComponent] This is only for information purposed. Better remove me from the log in Production
+03:30:22,141 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'fileServers' subsystem, ID: [fileServers, default]
+03:30:22,459 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'fileServers' subsystem, ID: [fileServers, default] complete
+03:30:22,459 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'imap' subsystem, ID: [imap, default]
+03:30:22,550 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'imap' subsystem, ID: [imap, default] complete
+03:30:22,550 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'email' subsystem, ID: [email, outbound]
+03:30:22,650 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'email' subsystem, ID: [email, outbound] complete
+03:30:22,651 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'email' subsystem, ID: [email, inbound]
+03:30:22,715 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'email' subsystem, ID: [email, inbound] complete
+03:30:22,715 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Subscriptions' subsystem, ID: [Subscriptions, default]
+03:30:22,735 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Subscriptions' subsystem, ID: [Subscriptions, default] complete
+03:30:22,743 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Synchronization' subsystem, ID: [Synchronization, default]
+03:30:22,803 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Synchronization' subsystem, ID: [Synchronization, default] complete
+03:30:22,859 INFO  [org.alfresco.service.descriptor.DescriptorService] Alfresco JVM - v1.8.0_45-b14; maximum heap size 910.500MB
+03:30:22,859 INFO  [org.alfresco.service.descriptor.DescriptorService] Server Mode :UNKNOWN
+03:30:22,859 INFO  [org.alfresco.service.descriptor.DescriptorService] Alfresco started (Community). Current version: 5.0.0 (d r99759-b2) schema 8,022. Originally installed version: 5.0.0 (d r99759-b2) schema 8,022.
+03:30:22,887 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'ActivitiesFeed' subsystem, ID: [ActivitiesFeed, default]
+03:30:23,108 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'ActivitiesFeed' subsystem, ID: [ActivitiesFeed, default] complete
+03:30:23,108 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Replication' subsystem, ID: [Replication, default]
+03:30:23,123 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Replication' subsystem, ID: [Replication, default] complete
+03:30:23,841 WARN  [org.activiti.engine.impl.bpmn.parser.BpmnParse] Following warnings encountered during process validation: [Validation set: 'activiti-executable-process' | Problem: 'activiti-exclusive-gateway-seq-flow-without-conditions'] : Exclusive gateway has at least one outgoing sequence flow without a condition (which isn't the default one) - [Extra info : processDefinitionId = publishWebContent | processDefinitionName = Publish Web Content Activiti Process |  | id = checkForScheduledTime |  | activityName = Check Schedule | ] ( line: 46, column: 9)
+
+03:30:26,809 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 407 Web Scripts (+0 failed), 549 URLs
+03:30:26,811 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 1 Package Description Documents (+0 failed) 
+03:30:26,811 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
+03:30:28,436 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 407 Web Scripts (+0 failed), 549 URLs
+03:30:28,437 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 1 Package Description Documents (+0 failed) 
+03:30:28,437 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
+03:30:28,439 INFO  [org.springframework.extensions.webscripts.AbstractRuntimeContainer] Initialised Repository Web Script Container (in 4461.9585ms)
+03:30:28,455 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] Registered template processor freemarker for extension ftl
+03:30:28,458 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] Registered script processor javascript for extension js
+03:30:29,891 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 407 Web Scripts (+0 failed), 549 URLs
+03:30:29,891 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 1 Package Description Documents (+0 failed) 
+03:30:29,891 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
+03:30:29,974 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 11 Web Scripts (+0 failed), 82 URLs
+03:30:29,974 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Package Description Documents (+0 failed) 
+03:30:29,974 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
+03:30:30,097 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 11 Web Scripts (+0 failed), 82 URLs
+03:30:30,097 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Package Description Documents (+0 failed) 
+03:30:30,097 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
+03:30:30,099 INFO  [org.springframework.extensions.webscripts.AbstractRuntimeContainer] Initialised Public Api Web Script Container (in 1587.4214ms)
+03:30:30,128 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 11 Web Scripts (+0 failed), 82 URLs
+03:30:30,128 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Package Description Documents (+0 failed) 
+03:30:30,128 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
+03:30:32,317 WARN  [org.apache.myfaces.shared_impl.util.LocaleUtils] Locale name in faces-config.xml null or empty, setting locale to default locale : en_US
+03:37:10,368 WARN  [org.apache.pdfbox.pdfparser.BaseParser] Specified stream length 18304 is wrong. Fall back to reading stream until 'endstream'.

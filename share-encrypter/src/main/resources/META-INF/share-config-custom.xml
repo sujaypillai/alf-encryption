@@ -1,0 +1,116 @@
+<!-- Share configuration related to this particular Share module extension, such as:
+     - Doclib action config
+     - Form config
+     - Aspect and Type config
+
+    Note. Any configuration related to the whole Share.war webapp
+           (i.e. not specific to this share extension) should be
+            placed in the environment specific config:
+             alfresco/tomcat/shared/classes/alfresco/web-extension/share-config-custom.xml file
+     -->
+<alfresco-config>
+	<!-- Document Library config section -->
+    <config evaluator="string-compare" condition="DocumentLibrary">
+        <!-- Custom Indicators -->
+        <indicators>
+            <indicator id="encrypt" index="10" label = "evaluator.encrypted">
+                <evaluator>extendedencryption.evaluator.doclib.action.isActive</evaluator>
+            </indicator>
+        </indicators>
+    </config>  
+    
+	<!-- Actions -->
+    <config evaluator="string-compare" condition="DocLibActions">
+        <actions>
+            <action id="encrypt" type="javascript" label="actions.encryption.action" icon="encrypt">
+                <param name="function">onActionFormDialog</param>
+                <permissions>
+                    <permission allow="true">Write</permission>
+                </permissions>                
+                <param name="action">encryption-action</param>
+                <param name="itemKind">action</param>
+                <param name="itemId">encrypt</param>
+                <param name="mode">create</param>
+                <param name="destination">{node.nodeRef}</param>
+                <param name="successMessage">message.encryption.success</param>
+                <param name="failureMessage">message.encryption.failure</param>
+                <evaluator negate="true" >extendedencryption.evaluator.doclib.action.isActive</evaluator>
+            </action>
+            <action id="decrypt" type="javascript" label="actions.decryption.action" icon="decrypt">
+                <param name="function">onActionFormDialog</param>
+                <permissions>
+                    <permission allow="true">Write</permission>
+                </permissions>                
+                <param name="action">decryption-action</param>
+                <param name="itemKind">action</param>
+                <param name="itemId">decrypt</param>
+                <param name="mode">create</param>
+                <param name="destination">{node.nodeRef}</param>
+                <param name="successMessage">message.decryption.success</param>
+                <param name="failureMessage">message.decryption.failure</param>
+                <evaluator>extendedencryption.evaluator.doclib.action.isActive</evaluator>
+            </action>
+        </actions>
+        <actionGroups>
+            <actionGroup id="document-browse">
+                <action index="500" id="encrypt" />
+                <action index="510" id="decrypt" />
+            </actionGroup>
+            <actionGroup id="document-details">
+                <action index="500" id="encrypt" />
+                <action index="510" id="decrypt" />
+            </actionGroup>
+        </actionGroups>        
+    </config>
+    
+    <config evaluator="string-compare" condition="encrypt" >
+        <forms>
+            <form>
+                <field-visibility>
+                    <show id="pass"/>
+                </field-visibility>
+                <appearance>
+                    <field id="pass" label-id="encryption-action.field.pass" mandatory="true">
+                        <control template="/org/alfresco/components/form/controls/textfield.ftl">
+                             <control-param name="maxLength">50</control-param>
+                             <control-param name="password"></control-param>
+                             <control-param name="size">50</control-param>
+                        </control>
+                    </field>
+                </appearance>
+                <constraint-handlers>
+                    <constraint type="mandatory"
+                                validation-handler="Alfresco.forms.validation.number" 
+                                message-id="encryption-action.field.handler" 
+                                event="keyup" />
+                </constraint-handlers>                        
+            </form>
+        </forms>    
+    </config>
+	
+    <config evaluator="string-compare" condition="decrypt">
+        <forms>
+            <form>
+                <field-visibility>
+                    <show id="pass"/>
+                </field-visibility>
+                <appearance>
+                    <field id="pass" label-id="encryption-action.field.pass" mandatory="true">
+                        <control template="/org/alfresco/components/form/controls/textfield.ftl">
+                             <control-param name="maxLength">50</control-param>
+                             <control-param name="password"></control-param>
+                             <control-param name="size">50</control-param>
+                        </control>
+                        <constraint-handlers>
+                            <constraint type="mandatory"
+                                        validation-handler="Alfresco.forms.validation.number" 
+                                        message-id="encryption-action.field.handler"
+                                        event="keyup" />
+                        </constraint-handlers>                        
+                    </field>
+                </appearance>
+            </form>
+        </forms>    
+    </config> 
+                          
+</alfresco-config>

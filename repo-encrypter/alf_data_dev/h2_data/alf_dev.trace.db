@@ -1,0 +1,26 @@
+04-16 03:30:08 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "ALF_CONTENT_URL" not found; SQL statement:
+DROP TABLE alf_content_url [42102-185]
+04-16 03:30:08 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "ACT_RU_TASK" not found; SQL statement:
+select min(id_) from ACT_RU_TASK [42102-185]
+04-16 03:39:52 jdbc[15]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-185]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:174)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:119)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:92)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.commons.pool.impl.GenericObjectPool.addObject(GenericObjectPool.java:1691)
+	at org.apache.commons.pool.impl.GenericObjectPool.ensureMinIdle(GenericObjectPool.java:1648)
+	at org.apache.commons.pool.impl.GenericObjectPool.access$700(GenericObjectPool.java:192)
+	at org.apache.commons.pool.impl.GenericObjectPool$Evictor.run(GenericObjectPool.java:1784)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-185]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 15 more

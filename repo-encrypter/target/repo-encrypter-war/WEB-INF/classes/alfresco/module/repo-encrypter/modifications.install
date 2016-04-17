@@ -1,0 +1,17 @@
+add|/WEB-INF/lib/repo-encrypter.jar
+add|/WEB-INF/classes/alfresco/extension/templates/webscripts/helloworld.get.desc.xml
+add|/WEB-INF/classes/alfresco/extension/templates/webscripts/helloworld.get.html.ftl
+add|/WEB-INF/classes/alfresco/extension/templates/webscripts/helloworld.get.js
+add|/WEB-INF/classes/alfresco/module/repo-encrypter/context/bootstrap-context.xml
+add|/WEB-INF/classes/alfresco/module/repo-encrypter/context/service-context.xml
+add|/WEB-INF/classes/alfresco/module/repo-encrypter/context/webscript-context.xml
+add|/WEB-INF/classes/alfresco/module/repo-encrypter/model/content-model.xml
+add|/WEB-INF/classes/alfresco/module/repo-encrypter/model/workflow-model.xml
+add|/WEB-INF/classes/alfresco/module/repo-encrypter/alfresco-global.properties
+add|/WEB-INF/classes/alfresco/module/repo-encrypter/log4j.properties
+add|/WEB-INF/classes/alfresco/module/repo-encrypter/module-context.xml
+mkdir|/WEB-INF/classes/alfresco/extension/templates/webscripts
+mkdir|/WEB-INF/classes/alfresco/extension/templates
+mkdir|/WEB-INF/classes/alfresco/extension
+mkdir|/WEB-INF/classes/alfresco/module/repo-encrypter/context
+mkdir|/WEB-INF/classes/alfresco/module/repo-encrypter/model
